@@ -1,0 +1,51 @@
+.playerspage{
+  width: 98%;
+  margin: 1%;
+  height: 95vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  .titlebar{
+    background-color:#F48024;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .page-title{
+    .fa-assistive-listening-systems{
+      color: #ffffff;
+      padding-right: 8px;
+      font-size: 38px;
+    }
+    span{
+      text-align: right;
+    }
+    color: #ffffff;
+    font-size: 18px;
+    padding: 1%;
+  }
+  .editbtn{
+    .fa-paint-brush{
+      font-size: 23px;
+      padding-right: 8 px;
+      cursor: pointer;
+    }
+    .createnew{
+      cursor: pointer;
+    }
+
+    color: #ffffff;
+    text-align: right;
+    font-size: 18px;
+    padding: 1%;
+  }
+  .playerdata{
+    font-family: "Copperplate Gothic Light";
+    padding-top: 1%;
+    overflow-y: scroll;
+    height: 65vh;
+    .row{
+  padding-top: 1%;
+    padding-bottom: 1%;
+}
+  }
+}

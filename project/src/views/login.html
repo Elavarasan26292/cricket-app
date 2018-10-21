@@ -1,0 +1,58 @@
+<div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 loginpage">
+<div class="col-lg-7 col-xl-7 col-md-7 col-sm-7 projecttitle">
+<p>Don't play for the crowd, Play for the country......</p>
+</div>
+<div ng-show="showlogin" class="col-lg-5 col-xl-5 col-md-5 col-sm-5 logincontainer">
+  <div class="contents">
+<center><img class="design" src="./assets/images/imgg.jpg"></img></center>
+<div class="form-group">
+  <label>Email id:</label>
+  <input type="text" ng-model="user.email" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label>Password:</label>
+  <input type="password" ng-model="user.password" class="form-control" id="pwd">
+</div>
+  <div class="createnew"><label ng-click="registerpage()">&nbsp;Create new user..</label></div>
+  <div class="errs">
+<p ng-show="nulls">Please Enter Username and Password...</p>
+<p ng-show="invld">UserName or password is invalid...</p>
+  </div>
+  <div>
+   <center><button type="submit" ng-click="login()" class="btn btn-default">Login</button></center>
+ </div>
+  </div>
+</div>
+<div ng-hide="showlogin" class="col-lg-5 col-xl-5 col-md-5 col-sm-5 registercontainer">
+  <div class="contents">
+<center><img class="design" src="./assets/images/imgg.jpg"></img></center>
+<div class="form-group">
+  <label>User Name:</label>
+  <input type="text" ng-model="reguser.name" class="form-control" id="nme">
+</div>
+<div class="form-group">
+  <label>Emailid:</label>
+  <input type="text" ng-model="reguser.email" class="form-control" id="email">
+</div>
+<div class="form-group">
+  <label>Password:</label>
+  <input type="password" ng-model="reguser.password" class="form-control" id="regpwd">
+</div>
+<div class="form-group">
+  <label>Confirm password:</label>
+  <input type="password" ng-model="reguser.passwordmtch" class="form-control" id="conpwd">
+</div>
+  <div class="errs">
+<p ng-show="regnul">All fields are required...</p>
+<p ng-show="invldpwd">Password dosen't match...</p>
+<p ng-show="existemail">Emailid already exists...</p>
+  </div>
+  <div>
+   <center>
+     <button type="submit" ng-click="register()" class="btn btn-default">Register</button>
+   <button type="cancel" ng-click="cancel()" class="btn btn-default">Cancel</button>
+ </center>
+ </div>
+  </div>
+</div>
+</div>

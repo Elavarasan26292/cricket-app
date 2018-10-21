@@ -1,0 +1,210 @@
+<div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 playerspage">
+  <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 titlebar">
+    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+      <div class="page-title"><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+        Add new Player
+      </div>
+    </div>
+    <div class="col-lg-9 col-xl-9 col-md-9 col-sm-9"></div>
+    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3">
+      <span ng-switch="editflag">
+        <div ng-switch-when="false" class="editbtn" ng-click=edit()>
+        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+        <span class="createnew">Edit</span>
+      </div>
+    </span>
+    </div>
+  </div>
+  <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 playerdata">
+    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 subcol1">
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Player Id:</span>
+  </div>
+  <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+    <span ng-switch="editflag">
+    <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.player_id" placeholder="Player Id"/>
+    <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.player_id" placeholder="Player Id" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Age:</span>
+  </div>
+  <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+    <span ng-switch="editflag">
+  <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.age" placeholder="Player age"/>
+  <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.age" placeholder="Player age" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Address 2:</span>
+  </div>
+  <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+    <span ng-switch="editflag">
+  <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.address_ln_2" placeholder="Address line 2"/>
+  <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.address_ln_2" placeholder="Address line 2" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Country:</span>
+  </div>
+  <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+    <span ng-switch="editflag">
+  <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.country" placeholder="Country name"/>
+  <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.country" placeholder="Country name" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">City:</span>
+  </div>
+  <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+    <span ng-switch="editflag">
+  <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.city" placeholder="City Name"/>
+  <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.city" placeholder="City Name" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Bating style:</span>
+</div>
+<div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+  <span ng-switch="editflag">
+  <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.bating_style" placeholder="Bating style"/>
+    <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.bating_style" placeholder="Bating style" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Matches played:</span>
+</div>
+<div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+  <span ng-switch="editflag">
+  <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.matches_played" placeholder="No. of matches played"/>
+  <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.matches_played" placeholder="No. of matches played" disabled/>
+</span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+  <span class="lbl">Teams played:</span>
+</div>
+<div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+  <span ng-switch="editflag">
+  <textarea ng-switch-when="true" class="inpsize form-control" rows="3" cols="50" ng-model="playerdatas.teams_played" placeholder="Teams played"></textarea>
+    <textarea ng-switch-when="false" class="inpsize form-control" rows="3" cols="50" ng-model="playerdatas.teams_played" placeholder="Teams played" disabled></textarea>
+  </span>
+  </div>
+  </div>
+    </div>
+    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 subcol2">
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Player Name:</span>
+    </div>
+    <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+      <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.player_name" placeholder="Player Name"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.player_name" placeholder="Player Name" disabled/>
+    </span>
+      </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Address 1:</span>
+      </div>
+      <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+        <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.address_ln_1" placeholder="Address line 1"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.address_ln_1" placeholder="Address line 1" disabled/>
+    </span>
+      </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Address 3:</span>
+      </div>
+      <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+        <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.address_ln_3" placeholder="Address line 3"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.address_ln_3" placeholder="Address line 3" disabled/>
+    </span>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">State:</span>
+    </div>
+      <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+        <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.state" placeholder="State"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.state" placeholder="State" disabled/>
+    </span>
+    </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Role:</span>
+    </div>
+      <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+        <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.role" placeholder="Role"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.role" placeholder="Role" disabled/>
+    </span>
+    </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Bowling style:</span>
+    </div>
+      <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+        <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.bowling_style" placeholder="Bowling style"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.bowling_style" placeholder="Bowling style" disabled/>
+    </span>
+    </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Runs scored:</span>
+    </div>
+    <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+      <span ng-switch="editflag">
+      <input ng-switch-when="true" type="text" class="inpsize form-control" ng-model="playerdatas.runs_scored" placeholder="Runs scored"/>
+      <input ng-switch-when="false" type="text" class="inpsize form-control" ng-model="playerdatas.runs_scored" placeholder="Runs scored" disabled/>
+    </span>
+    </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+      <span class="lbl">Man of the match:</span>
+    </div>
+    <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8">
+      <span ng-switch="editflag">
+      <textarea ng-switch-when="true" class="inpsize form-control" rows="3" cols="50" ng-model="playerdatas.man_of_match" placeholder="Man of match"></textarea>
+      <textarea ng-switch-when="false" class="inpsize form-control" rows="3" cols="50" ng-model="playerdatas.man_of_match" placeholder="Man of match" disabled></textarea>
+    </span>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+  <center class="lstsub">
+    <span ng-switch="editflag">
+    <button ng-switch-when="true" type="button" ng-click="submitpage()" class="btn btn-primary">Submit</button>
+  </span>
+  </center>
+  <span class="navtool" ng-click="back()">
+    < Go Back
+  </span>
+  </div>

@@ -1,0 +1,85 @@
+.playerslist{
+  width: 98%;
+  margin: 1%;
+  height: 95vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  .titlebar{
+    background-color:#F48024;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .page-title{
+    .fa-id-card{
+      color: #ffffff;
+      padding-right: 10px;
+      font-size: 32px;
+    }
+    span{
+      text-align: right;
+    }
+    color: #ffffff;
+    font-size: 18px;
+    // text-align: left;
+    padding: 1%;
+  }
+  .page-logout{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 1%;
+    cursor: pointer;
+  }
+  .add-new{
+    .fa-plus-circle{
+      font-size: 28px;
+      padding-right: 8  px;
+    }
+    .createnew{
+      cursor: pointer;
+    }
+
+    color: #ffffff;
+    text-align: right;
+    font-size: 18px;
+    padding: 1%;
+  }
+  .playerdata{
+    font-family: "Copperplate Gothic Light";
+    padding-top: 1%;
+    overflow-y: scroll;
+    height: 65vh;
+    table{
+      width: 100%;
+      th{
+        background-color: #ddd;
+        padding: 10px 20px;
+        font-size: 19px;
+      }
+      td{
+        font-family: "Times new Roman";
+        padding: 10px 20px;
+          font-size: 18px;
+          .fa-edit{
+            color: #12b886;
+          }
+          .fa-eye{
+            color:#3CB371
+          }
+          .fa-times-circle{
+            color: red;
+          }
+          .pointers{
+              cursor: pointer;
+              color: #1A73E8;
+              font-size: 22px;
+          }
+          .pointers1{
+              cursor: pointer;
+              color: #F48024;
+              font-size: 22px;
+          }
+      }
+    }
+  }
+}

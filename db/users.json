@@ -1,0 +1,7 @@
+{
+	"__v" : 0,
+	"_id" : ObjectId("5bcc3ea16a1b28c18c0e094b"),
+	"email" : "admin@gmail.com",
+	"name" : "MaxTennison",
+	"password" : "sha1$4e7002d0$1$e90e19c2d31754e2eb5f5919f052030989df6b6d"
+},

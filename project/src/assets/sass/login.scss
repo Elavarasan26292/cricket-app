@@ -1,0 +1,76 @@
+.loginpage{
+  .projecttitle{
+    font-size: 60px;
+    p{
+      color: #fafafa;
+    }
+  }
+.logincontainer{
+  background-color: #ffffff;
+  margin-top: 1%;
+  border-radius: 8px;
+  .contents{
+    height: 96vh;
+    padding-top: 30%;
+    overflow: auto;
+}
+  label{
+    font-size: 14px;
+  }
+  .createnew{
+    label{
+    color: #1a0dab;
+    cursor: pointer;
+  }
+  }
+  .design{
+    width: 100px;
+  }
+  .checks{
+    width: 20px;
+    height: 15px;
+  }
+  .btn-default{
+    font-size: 18px;
+  }
+  .errs{
+    p{
+      color: red;
+    }
+  }
+}
+.registercontainer{
+  background-color: #ffffff;
+  margin-top: 1%;
+  border-radius: 8px;
+  .contents{
+    height: 96vh;
+    padding-top: 12%;
+    overflow: auto;
+}
+  label{
+    font-size: 14px;
+  }
+  .createnew{
+    label{
+    color: #1a0dab;
+    cursor: pointer;
+  }
+  }
+  .design{
+    width: 100px;
+  }
+  .checks{
+    width: 20px;
+    height: 15px;
+  }
+  .btn-default{
+    font-size: 18px;
+  }
+  .errs{
+    p{
+      color: red;
+    }
+  }
+}
+}
